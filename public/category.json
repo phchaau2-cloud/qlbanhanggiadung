@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "name":"Bếp điện"
+    },
+    {
+         "id":2,
+        "name":"Bàn là - Bàn ủi"
+    },
+     {
+        "id":3,
+        "name":"Chảo"
+    },
+     {
+         "id":4,
+        "name":"Máy hút bụi"
+    },
+     {
+        "id":5,
+        "name":"Máy lọc không khí"
+    },
+     {
+         "id":6,
+        "name":"Máy lọc nước"
+    },
+     {
+        "id":7,
+        "name":"Máy xay"
+    },
+     {
+         "id":8,
+        "name":"Nồi áp suất"
+    },
+      {
+         "id":9,
+        "name":"Nồi chiên không dầu"
+    },
+      {
+         "id":10,
+        "name":"Nồi cơm điện"
+    }
+]

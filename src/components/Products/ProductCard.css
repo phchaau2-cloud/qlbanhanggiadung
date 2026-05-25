@@ -1,0 +1,233 @@
+.product-card{
+    background-color: #ffffff;
+    border: 1px solid #d6d1c7;
+    border-radius: 12px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s, transform 0.3s;
+    overflow: hidden;
+    height: 100%;
+    align-items: stretch;
+    box-shadow: 0 2px 10px rgba(95, 107, 112, 0.05);
+}
+
+.product-card:hover{
+    box-shadow: 0 6px 18px rgba(95, 107, 112, 0.12);
+    transform: translateY(-3px);
+}
+
+.product-top-banner{
+    background-color: #efebe4;
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #5f6b70;
+    text-align: center;
+    border-bottom: 1px solid #d6d1c7;
+    font-weight: 600;
+}
+
+.product-image-container{
+    padding: 15px;
+    text-align: center;
+    background-color: #f7f5f1;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image{
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    min-height: 200px;
+    object-fit: contain;
+}
+
+.product-badge-section {
+    padding: 0 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-badge {
+    background-color: #6d7c82;
+    color: #ffffff;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    display: inline-block;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.product-spec-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.spec-tag {
+    background-color: #efebe4;
+    color: #5f6b70;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #d6d1c7;
+}
+
+.product-name{
+    font-size: 32px;
+    font-weight: 700;
+    color: #5f6b70;
+    margin: 0 15px 19px 15px;
+    line-height: 1.4;
+    min-height: 56px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-ram-ssd{
+    display: flex;
+    gap: 8px;
+    padding: 0 15px;
+    margin-bottom: 12px;
+}
+
+.ram-ssd-tag{
+    background: linear-gradient(135deg, #efebe4 0%, #f7f5f1 100%);
+    color: #6d7c82;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #d6d1c7;
+}
+
+.product-pricing{
+    padding: 0 15px;
+    margin-bottom: 10px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.current-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6d7c82;
+    margin-bottom: 4px;
+}
+
+.original-price-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.original-price {
+    font-size: 14px;
+    color: #8d9886;
+    text-decoration: line-through;
+}
+
+.discount {
+    font-size: 12px;
+    color: #a3aca9;
+    font-weight: 600;
+}
+
+.product-gift {
+    padding: 0 15px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #6d7c82;
+    font-weight: 500;
+}
+
+.product-specs {
+    padding: 0 15px;
+    margin: 0 0 15px 0;
+    list-style: none;
+    font-size: 12px;
+    color: #8d9886;
+    line-height: 1.8;
+}
+
+.product-specs li {
+    margin-bottom: 6px;
+}
+
+.product-specs strong {
+    color: #5f6b70;
+    font-weight: 600;
+}
+
+.product-rating-sales {
+    padding: 0 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+}
+
+.rating {
+    color: #a3aca9;
+    font-weight: 600;
+}
+
+.sales {
+    color: #8d9886;
+}
+
+.compare-button {
+    margin: auto 15px 15px 15px;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #6d7c82;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.compare-button:hover {
+    background-color: #5f6b70;
+    transform: translateY(-1px);
+}
+
+.compare-button:disabled {
+    background-color: #b8b7a4;
+    cursor: not-allowed;
+}
+
+.error-text {
+    margin: 8px 15px 12px;
+    color: #6d7c82;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .product-image {
+        max-width: 200px;
+    }
+
+    .current-price {
+        font-size: 18px;
+    }
+
+    .product-name {
+        font-size: 18px;
+        min-height: 35px;
+        color: #5f6b70;
+    }
+}
