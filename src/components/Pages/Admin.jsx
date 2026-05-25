@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useMemo, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import AdminProduct from './Adminproduct';
-// import AdminCategory from './Admincategory';
-// import AdminCustomer from './Admincustomer';
-// import AdminEmployee from './Adminemployee';
-// import AdminBill from './Adminbill';
-// import AdminInvoiceDetails from './Admininvoicedetails';
+import AdminProduct from './Adminproduct';
+import AdminCategory from './Admincategory';
+import AdminCustomer from './Admincustomer';
+import AdminEmployee from './Adminemployee';
+import AdminBill from './Adminbill';
+import AdminInvoiceDetails from './Admininvoicedetails';
 import './Admin.css';
 
 const jsonBase = import.meta.env.BASE_URL || '/';
