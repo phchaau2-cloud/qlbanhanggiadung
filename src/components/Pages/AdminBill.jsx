@@ -125,7 +125,7 @@ function AdminBill({ embedded = false }) {
       setLoading(true);
       setLoadError('');
       try {
-        const res = await fetch(`${jsonBase}bill.json`);
+        const res = await fetch(`${jsonBase}Bill.json`);
         if (!res.ok) throw new Error('Không tải được bill.json');
         const data = await res.json();
         setRows(Array.isArray(data) ? data : []);
@@ -272,8 +272,8 @@ function AdminBill({ embedded = false }) {
                     displayedRows.map((r) => (
                       <tr key={r.id}>
                         <td>{r.id}</td>
-                        <td>{r.customer_id}</td>
-                        <td>{r.employee_id}</td>
+                        <td>{r.customerId}</td>
+                        <td>{r.employeeId}</td>
                         <td>{r.date}</td>
                         <td>{r.total}</td>
                         <td>{statusLabel(String(r.status || '').toLowerCase())}</td>

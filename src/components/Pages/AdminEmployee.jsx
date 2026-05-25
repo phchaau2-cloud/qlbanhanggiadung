@@ -108,7 +108,7 @@ function AdminEmployee({ embedded = false }) {
       setLoading(true);
       setLoadError('');
       try {
-        const res = await fetch(`${jsonBase}employee.json`);
+        const res = await fetch(`${jsonBase}Employee.json`);
         if (!res.ok) throw new Error('Không tải được employee.json');
         const data = await res.json();
         setRows(Array.isArray(data) ? data : []);

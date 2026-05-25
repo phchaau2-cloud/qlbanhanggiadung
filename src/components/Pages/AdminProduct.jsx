@@ -283,7 +283,7 @@ function AdminProduct({ embedded = false }) {
                       <td>{p.imageKey}</td>
                       <td>{p.originalPrice}</td>
                       <td>{p.currentPrice}</td>
-                      <td>{p.categoryid}</td>
+                      <td>{p.categoryId}</td>
                       <td>
                         <div className="admin-table_actions">
                           <button

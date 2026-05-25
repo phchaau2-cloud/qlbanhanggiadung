@@ -100,7 +100,7 @@ function AdminCustomer({ embedded = false }) {
       setLoading(true);
       setLoadError('');
       try {
-        const res = await fetch(`${jsonBase}customer.json`);
+        const res = await fetch(`${jsonBase}Customer.json`);
         if (!res.ok) throw new Error('Không tải được customer.json');
         const data = await res.json();
         setRows(Array.isArray(data) ? data : []);
