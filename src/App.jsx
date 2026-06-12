@@ -10,7 +10,7 @@ import Login from "./components/Pages/Login";
 import Profile from "./components/Pages/Profile";
 import Signup from "./components/Pages/Signup";
 import Admin from './components/Pages/Admin';
-import Popup from './components/Popup/Popup';
+import Popup from './components/popup/popup';
 import Banner from './components/Banner/Banner';
 import FlashSale from './components/FlashSale/FlashSale';
 
